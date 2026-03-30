@@ -1,0 +1,20 @@
+# Data — never commit raw data to Git
+data/
+
+# Generated outputs — reproducible, not stored in repo
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Jupyter (original notebook kept for reference only)
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
