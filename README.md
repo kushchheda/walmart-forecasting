@@ -15,7 +15,7 @@ and Prophet — evaluated on a held-out 13-week test set.
 * **Situation:** Retailers face significant financial risks from inventory imbalances. Overstocking leads to high holding costs, while understocking during peak periods like Black Friday results in lost revenue and diminished loyalty.
 * **Task:** Develop a robust forecasting system using 143 weeks of data across 45 Walmart stores to predict demand spikes and quantify the impact of holidays and macroeconomic factors (CPI, Unemployment, Fuel).
 * **Action:** Built a modular Python production pipeline to compare four modeling philosophies: **Moving Average (Baseline)**, **ARIMA**, **SARIMAX (Exogenous)**, and **Meta’s Prophet**. Implemented custom preprocessing for date-alignment, stationarity testing (ADF), and seasonal decomposition.
-* **Result:** Achieved a **32.2% improvement** in accuracy over the baseline. The winning model, **SARIMA (0,0,0)x(0,1,2,52)**, delivered a **MAPE of 1.92%**, providing a highly reliable engine for inventory procurement.
+* **Result:** Achieved a **23.9% improvement** in accuracy over the baseline. The winning model, **SARIMA (0,0,0)x(0,1,2,52)**, delivered a **MAPE of 2.16%**, providing a highly reliable engine for inventory procurement.
 
 ---
 
