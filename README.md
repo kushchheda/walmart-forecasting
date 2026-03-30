@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 **3. Add the data**
 
-Download the [Walmart Sales Dataset](https://www.kaggle.com/datasets/mikhail1681/walmart-sales)
+Download the [Walmart Sales Dataset](https://www.kaggle.com/datasets/yasserh/walmart-dataset)
 from Kaggle and place it at `data/Walmart.csv`.
 
 **4. Run the pipeline**
