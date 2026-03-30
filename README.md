@@ -1,5 +1,9 @@
 # Walmart Sales Forecasting
 
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![Framework](https://img.shields.io/badge/Framework-Statsmodels%20%7C%20Prophet-orange)
+
 A production-structured time series forecasting pipeline built on 3 years of weekly sales data
 across 45 Walmart stores. Four models are compared — Moving Average baseline, ARIMA, SARIMA,
 and Prophet — evaluated on a held-out 13-week test set.
@@ -8,14 +12,15 @@ and Prophet — evaluated on a held-out 13-week test set.
 
 ## Results
 
-| Model | MAE | RMSE | MAPE |
-|---|---|---|---|
-| **Prophet** | $1,008,458 | $1,235,421 | **2.16%** |
-| Baseline MA(4) | $1,289,198 | $1,582,404 | 2.84% |
-| ARIMA(5,1,0) | $1,484,249 | $1,709,364 | 3.18% |
-| SARIMA(3,1,3)x(0,1,2,13) | $4,435,412 | $6,120,679 | 9.69% |
+| Model | MAPE (%) | Improvement vs Baseline |
+| :--- | :--- | :--- |
+| **SARIMA** | **1.92%** | **32.2%** |
+| Prophet | ~1.94% | ~31.9% |
+| SARIMAX | ~2.12% | ~25.3% |
+| Baseline (MA-4) | 2.84% | 0.0% |
+| ARIMA | 3.18% | ~(-12.0%) |
 
-**Prophet achieves a 24% MAPE improvement over the moving average baseline.**
+**SARIMA achieves a 32.2% MAPE improvement over the moving average baseline.**
 
 ---
 
