@@ -4,9 +4,9 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Framework](https://img.shields.io/badge/Framework-Statsmodels%20%7C%20Prophet-orange)
 
-Walmart wwekly sales time series forecasting pipeline built on 3 years of weekly sales data
-across 45 Walmart stores. Multiple models are compared — Moving Average baseline, ARIMA, SARIMA,
-SARIMAX, and Prophet — evaluated on a held-out 13-week test set.
+Walmart weekly sales time series forecasting pipeline built on 3 years of weekly sales data
+across 45 Walmart stores. Four models are compared — Moving Average baseline, ARIMA, SARIMA,
+and Prophet — evaluated on a held-out 13-week test set.
 
 ---
 
@@ -22,7 +22,7 @@ SARIMAX, and Prophet — evaluated on a held-out 13-week test set.
 ## 🚀 Key Results
 
 | Model | MAPE (%) | Improvement vs Baseline |
-| :--- | :--- | :--- |
+|---|---|---|---|
 | **SARIMA** | **1.92%** | **32.2%** |
 | Prophet | ~1.94% | ~31.9% |
 | SARIMAX | ~2.12% | ~25.3% |
