@@ -22,14 +22,13 @@ and Prophet — evaluated on a held-out 13-week test set.
 ## 🚀 Key Results
 
 | Model | MAPE (%) | Improvement vs Baseline |
-|---|---|---|---|
-| **SARIMA** | **1.92%** | **32.2%** |
-| Prophet | ~1.94% | ~31.9% |
-| SARIMAX | ~2.12% | ~25.3% |
-| Baseline (MA-4) | 2.84% | 0.0% |
-| ARIMA | 3.18% | ~(-12.0%) |
+| :--- | :--- | :--- |
+| **Prophet** | **2.16%** | 23.9 |
+| Baseline MA(4) | 2.84% | 0% |
+| ARIMA(5,1,0) | 3.18% | -12.0% |
+| SARIMA(3,1,3)x(0,1,2,13) | 9.69% | -241.2% |
 
-**SARIMA achieves a 32.2% MAPE improvement over the moving average baseline.**
+**Prophet achieves a ~24% MAPE improvement over the moving average baseline.**
 
 ---
 
