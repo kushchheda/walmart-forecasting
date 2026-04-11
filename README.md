@@ -5,8 +5,8 @@
 ![Framework](https://img.shields.io/badge/Framework-Statsmodels%20%7C%20Prophet-orange)
 
 Walmart weekly sales time series forecasting pipeline built on 3 years of weekly sales data
-across 45 Walmart stores. Four models are compared — Moving Average baseline, ARIMA, SARIMA,
-and Prophet — evaluated on a held-out 13-week test set.
+across 45 Walmart stores. Four models are compared: Moving Average baseline, ARIMA, SARIMA,
+and Prophet, evaluated on a held-out 13-week test set.
 
 ---
 
@@ -88,7 +88,7 @@ All plots will be saved to `outputs/plots/` and all result CSVs to `outputs/resu
 
 ## Dataset
 
-- **Source:** Kaggle — Walmart Store Sales Forecasting
+- **Source:** Kaggle - Walmart Store Sales Forecasting
 - **Coverage:** 45 stores, 143 weeks (Feb 2010 – Oct 2012)
 - **Records:** 6,435 rows (store × week)
 - **Features:** Weekly Sales, Holiday Flag, Temperature, Fuel Price, CPI, Unemployment
@@ -110,7 +110,7 @@ without additional differencing.
 
 ### Models
 
-**Baseline — Moving Average (4-week)**
+**Baseline - Moving Average (4-week)**
 A flat forecast using the trailing 4-week average. A `shift(1)` is applied before
 rolling to prevent data leakage.
 
@@ -137,7 +137,7 @@ was trained). Metrics: MAE, RMSE, MAPE.
 
 1. **Prophet is the strongest model** (MAPE 2.16%), outperforming all others by capturing
    multiplicative holiday seasonality effectively.
-2. **Holiday weeks boost sales by ~7.8%** — the single most influential external factor.
+2. **Holiday weeks boost sales by ~7.8%** - the single most influential external factor.
 3. **Economic indicators (CPI, Fuel Price, Temperature, Unemployment) explain less than 3%
    of variance**, suggesting that calendar and seasonal effects dominate.
 4. **SARIMA underperforms** on this dataset due to difficulty modeling extreme holiday spikes
