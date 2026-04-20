@@ -23,7 +23,7 @@ and Prophet, evaluated on a held-out 13-week test set.
 
 | Model | MAPE (%) | Improvement vs Baseline |
 | :--- | :--- | :--- |
-| **Prophet** | **2.16%** | 23.9 |
+| **Prophet** | **2.16%** | 23.9% |
 | Baseline MA(4) | 2.84% | 0% |
 | ARIMA(5,1,0) | 3.18% | -12.0% |
 | SARIMA(3,1,3)x(0,1,2,13) | 9.69% | -241.2% |
